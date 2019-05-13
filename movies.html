@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Webflix|Movies</title>
+<link rel="stylesheet"  type="text/css" href="Style/style.css">
+</head>
+
+<body>
+<div id="page-wrap">
+  <ul id="nav">
+ 		<nav class="navbar-default">
+				<div class="nav-brand">
+			<a class="logo" href="index.html"><img src="image/Artboard2.jpg" alt="sitelogo"></a>
+	  </div>
+			
+	  	<li><a href="index.html">	
+		  Home</a></li>
+		<li><a href="movies.html"><span>Movies</span></a></li>
+		<li><a href="tvseries.html">Tvseries</a></li>
+		<li><a href="latest.html">Latest</a></li>
+		<li><a href="about.html">About</a></li>
+		
+			</nav>
+	</ul>
+    </div>
+
+	<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav").style.top = "0";
+  } else {
+    document.getElementById("nav").style.top = "-75px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the join button if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+</script>
+
+<div class="dropdown">
+	<button onclick="myFunction()" class="dropbtn">Join</button>
+	  <div id="myDropdown" class="dropdown-content">
+			  <a href="form.php">Sign up</a>
+			<a href="log.php">Log in</a>
+			<a href="logout.php">Log out</a>
+	  </div>
+	</div>
+
+
+	
+	<div class="mov-title">
+		<span>Movies</span>
+	</div>
+	 <section id="main-content1">
+
+		 <a href="player.php" title="batman">
+				<div class="holder">
+			<img src="image/Batman_ The Killing Joke dvd cover_ - https___www.cinematerial.com_movie.jpg" 	alt="batmantkj" width="200px" height="300px">
+			<div class="overlay">
+					<div class="text">
+						Batman the killing Joke <br> <br>
+						Genre:<span id="animation">animation</span>,<span id="action">action</span><br>
+	
+					</div>
+				</div>
+			</div>	
+
+		</a>
+
+ 		<a href="player.php" title="foreigner">
+				<div class="holder">
+			<img src="image/The Foreigner French movie poster_ - https___www.cinematerial.com_movie.jpg" alt="The foreigner" width="221" height="292">
+			<div class="overlay">
+					<div class="text">
+							The foreighner <br> <br>
+							Genre:<span id="action">action</span><br>
+		
+						</div>
+						</div>
+			</div>
+		</a>
+
+  		<a href="player.php" title="bright">
+					<div class="holder">
+			<img src="image/Bright movie poster_ - https___www.cinematerial.com_movie.jpg" alt="bright" width="200px" height="300px">
+			<div class="overlay">
+					<div class="text">
+							The foreighner <br> <br>
+							Genre:<span id="action">action</span><br>
+		
+						</div>
+						</div>
+			</div>
+		</a>
+
+		<a href="player.php" title="flatliners">
+				<div class="holder">
+		<img src="image/Flatliners teaser poster_ - https___www.cinematerial.com_movie.jpg" alt="flatline"
+			 width="200px" height="300px">
+			 <div class="overlay">
+					<div class="text">
+							Flatliners <br> <br>
+							Genre:<span id="horror">Horror</span><br>
+		
+						</div>
+						</div>
+			</div>
+			
+			</a>
+			 
+   </section>  <!--end of main content1-->
+	
+</div><!--end of pagewrap-->
+	
+	<div id="footer">
+		<p>&copy;2018 Webflix.com </p>
+	
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Webflix|about</title>
+<link rel="stylesheet"  type="text/css" href="Style/style.css">
+</head>
+
+<body>
+<div id="page-wrap">
+<ul id="nav">
+ 		<nav class="navbar-default">
+				<div class="nav-brand">
+			<a class="logo" href="index.html"><img src="image/Artboard2.jpg" alt="sitelogo"></a>
+	  </div>
+			
+	  	<li><a href="index.html">	
+		  Home</a></li>
+		<li><a href="movies.html">Movies</a></li>
+		<li><a href="tvseries.html">Tvseries</a></li>
+		<li><a href="latest.html">Latest</a></li>
+		<li><a href="about.html"><span>About</span></a></li>
+			</nav>
+	</ul>
+	<script>
+			var prevScrollpos = window.pageYOffset;
+			window.onscroll = function() {
+			var currentScrollPos = window.pageYOffset;
+			  if (prevScrollpos > currentScrollPos) {
+				document.getElementById("nav").style.top = "0";
+			  } else {
+				document.getElementById("nav").style.top = "-75px";
+			  }
+			  prevScrollpos = currentScrollPos;
+			}
+			
+			</script>
+	<section class="desc">
+		<div id="pop">
+			<p>The project we were given was entitled multimedia based website.Our idea was inpired by the
+				sites like netflix and youtube, what we did here is sort of a mashup of both ideas.It functionalities are used to enable the user to stream movies and tvseries online.
+				credits:- Eyuel Getachew(2116/07), Girum Afework(), Fikadu Wadilo(), Samuel().
+				
+		</div>
+	 </section>
+	</div><!--end of pagewrap-->`
+	<div id="footer">
+		<p>&copy; 2018 Webflix.com </p>
+	
+	</div>
+	
+</body>
+</html>

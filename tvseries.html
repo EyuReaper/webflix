@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Webflix|Tvseries</title>
+<link rel="stylesheet"  type="text/css" href="Style/style.css">
+</head>
+
+<body>
+<div id="page-wrap">
+ <ul id="nav">
+ 		<nav class="navbar-default">
+				<div class="nav-brand">
+			<a class="logo" href="index.html"><img src="image/Artboard2.jpg" alt="sitelogo"></a>
+	  </div>
+			
+	  	<li><a href="index.html">	
+		  Home</a></li>
+		<li><a href="movies.html">Movies</a></li>
+		<li><a href="tvseries.html"><span>Tvseries</span></a></li>
+		<li><a href="latest.html">Latest</a></li>
+		<li><a href="about.html">About</a></li>
+		
+			</nav>
+	</ul>
+		
+    </div>
+
+    
+	<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("nav").style.top = "0";
+  } else {
+    document.getElementById("nav").style.top = "-75px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the join button if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+</script>
+
+<div class="dropdown">
+	<button onclick="myFunction()" class="dropbtn">Join</button>
+	  <div id="myDropdown" class="dropdown-content">
+			  <a href="form.php">Sign up</a>
+			<a href="log.php">Log in</a>
+			<a href="logout.php">Log out</a>
+	  </div>
+	</div>
+	
+	
+	<div class="ser-title">
+		<span>TV Series</span>
+	        </div>
+	        
+	   <section id="main-content2">
+
+		<a href="player.php" title="jigsaw">
+				<div class="holder">
+		 	<img src="image/Jigsaw advance poster_ - https___www.cinematerial.com_movie.jpg" alt="jigsaw"
+			  width="200px" height="300px">
+			  <div class="overlay">
+					<div class="text">
+							Jigsaw <br> <br>
+							Genre:<span id="horror">Horror</span><br>
+		
+						</div>
+						</div>
+			</div>
+			</a>
+
+		<a href="player.php" title="bladerunner">
+				<div class="holder">
+			<img src="image/Blade Runner 2049 movie poster_ - https___www.cinematerial.com_movie.jpg" alt="bladerunner" width="200px" height="300px">
+			<div class="overlay">
+					<div class="text">
+							Bladerunner <br> <br>
+							Genre:<span id="sci-fi">Sci-fi</span><br>
+		
+						</div>
+						</div>
+			</div>
+		
+		</a>
+
+		<a href="player.php" title="war for the planet of the apes">
+				<div class="holder">
+			<img src="image/War for the Planet of the Apes movie _ - https___www.cinematerial.com_movie.jpg" alt="warfortheplanetoftheapes" width="258" height="292">
+			<div class="overlay">
+					<div class="text">
+							Bladerunner <br> <br>
+							Genre:<span id="sci-fi">Sci-fi</span><br>
+		
+						</div>
+						</div>
+			</div>
+		</a>
+			  
+		 </section><!--end of main content2-->
+   
+	
+</div><!--end of pagewrap-->
+<div id="footer">
+		<p>&copy;2018 Webflix.com </p>
+	
+	</div>
+	
+	
+</body>
+</html>
